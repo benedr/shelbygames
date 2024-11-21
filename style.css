@@ -1,0 +1,142 @@
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    .flier {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      border: 1px solid #333;
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+    .background {
+      position: absolute;
+      inset: 0;
+      background-image: url('/placeholder.svg?height=600&width=800');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.2;
+      z-index: 1;
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      background-image: url(cod\ 2.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-blend-mode: darken;
+      background-color: rgba(13, 11, 11, 0.511);
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #fbbf24;
+    }
+    h1 span {
+      display: block;
+      color: #fff;
+      margin-top: 0.25rem;
+    }
+    .description {
+      text-align: center;
+      font-size: 1.125rem;
+      color: white;
+      max-width: 36rem;
+      margin: 0 auto 2rem;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .info-item {
+      background-color: rgba(24, 24, 27, 0.5);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .info-item svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: 0.5rem;
+      fill: #fbbf24;
+    }
+    .tournament-format {
+      background-color: rgba(24, 24, 27, 0.5);
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .tournament-format h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .tournament-format ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      color: #d4d4d8;
+    }
+    .button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-size: 1.125rem;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      background-color: #fbbf24;
+      color: #000;
+      transition: background-color 0.3s;
+      margin: 1rem auto;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #f59e0b;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #71717a;
+    }
+
+    .input-group {
+      margin-bottom: 1rem;
+    }
+    .input-label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #fbbf24;
+    }
+    .input-field {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #333;
+      background-color: rgba(61, 61, 68, 0.5);
+      color: #fff;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    .input-field:focus {
+      border-color: #fbbf24;
+    }
+    @media (min-width: 640px) {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  
